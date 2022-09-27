@@ -1,0 +1,138 @@
+:root {
+  --color-primary: #ffbf00;
+  --color-text: #f9f9f9;
+  --color-label: #aaaaaa;
+  --color-disabled: #888888;
+
+  --length-sm1: 0.3rem;
+  --length-sm2: 0.6rem;
+  --length-sm3: 0.8rem;
+
+  --length-md1: 1rem;
+  --length-md2: 1.4rem;
+  --length-md3: 1.8rem;
+
+  --length-lg1: 2.2rem;
+  --length-lg2: 3.3rem;
+  --length-lg3: 4.4rem;
+
+  --length-xl1: 6.5rem;
+  --length-xl2: 8.5rem;
+  --length-xl3: 10.5rem;
+}
+
+body {
+  margin: 0;
+  position: relative;
+}
+
+.logo {
+  position: absolute;
+  height: 14rem;
+  width: auto;
+}
+
+h1 {
+  color: var(--color-primary);
+  font-family: 'Sora', sans-serif;
+}
+
+.container{
+  height: 100%;
+  width: 100%;
+  background-color: #565151;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+input{
+  display: grid;
+  grid-column: span 4;
+  height: 100px;
+  width: 260px;
+  border: none;
+  border-radius: 12px;
+  background: black;
+
+  font-size: xx-large;
+  color: white;
+
+  text-align: end;
+}
+
+.calculator{
+  display: grid;
+  grid-template-columns: repeat(4,2fr);
+  border: 1px solid #565151;
+  border-radius: 2px;
+  padding: 12px;
+  height: 450px;
+  border-radius: 27px;
+  background: black;
+  box-shadow: 0px -2px 5px 0px #5a5a5a, 0px 2px 5px 2px black;
+}
+
+button{
+  border-radius: 27px;
+  border: none;
+  height: 59px;
+  width: 58px;
+  font-size: x-large;
+}
+
+.first
+{
+    background: rgb(167 177 223);
+}
+
+.symbol
+{
+    background: #ffbf00;
+}
+
+button:active
+{
+    background: rgb(144, 144, 199);
+}
+
+.bottom-svg {
+  width: 100%;
+  height: auto;
+}
+
+.sidebar {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  display: none;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-between;
+  width: var(--length-lg2);
+  height: 100%;
+  background: var(--color-card);
+  color: var(--color-primary);
+  display: flex;
+}
+
+.sidebar .uil {
+  font-size: var(--length-md3);
+  cursor: pointer;
+}
+/*
+@media only screen and (min-width: 800px) {
+  .sidebar {
+    display: flex;
+  }
+} */
+
+
+.sidebar-top,
+.sidebar-bottom {
+  display: grid;
+  place-items: center;
+  height: var(--length-lg3);
+}

@@ -5,33 +5,54 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;700&display=swap" rel="stylesheet">
   <title>Calculator</title>
 </head>
 <body>
+  <aside class="sidebar">
+    <span class="sidebar-top uil uil-adjust"></span>
+    <div class="sidebar-middle">
+      <span class="sidebar-top uil uil-plus"></span>
+      <span class="sidebar-top uil uil-tag"></span>
+      <span class="sidebar-top uil uil-bookmark"></span>
+    </div>
+    <span class="sidebar-bottom uil uil-setting"></span>
+  </aside>
   <div class="container">
+    <span class="logo uil uil-abacus"></span>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#ffbf00" fill-opacity="1" d="M0,256L0,224L480,224L480,128L960,128L960,224L1440,224L1440,0L960,0L960,0L480,0L480,0L0,0L0,0Z"></path>
+    </svg>
+    <h1>Time to do some calcullations:</h1>
     <div class="calculator">
       <input type="text" placeholder="0.00" id="screen">
-      <button>AC</button>
-      <button>C</button>
-      <button>%</button>
-      <button>&divide;</button>
-      <button>7</button>
-      <button>8</button>
-      <button>9</button>
-      <button>-</button>
-      <button>4</button>
-      <button>5</button>
-      <button>6</button>
-      <button>&times;</button>
-      <button>1</button>
-      <button>2</button>
-      <button>3</button>
-      <button>+</button>
-      <button>00</button>
-      <button>0</button>
-      <button>.</button>
-      <button>=</button>
+      <button class="first" onclick="allclear()">AC</button>
+      <button class="first" onclick="allclear()">C</button>
+      <button class="first" onclick="show('%')">%</button>
+      <button class="symbol" onclick="show('/')">&divide;</button>
+      <button onclick="show('7')">7</button>
+      <button onclick="show('8')">8</button>
+      <button onclick="show('9')">9</button>
+      <button class="symbol" onclick="show('-')">-</button>
+      <button onclick="show('4')">4</button>
+      <button onclick="show('5')">5</button>
+      <button onclick="show('6')">6</button>
+      <button class="symbol" onclick="show('*')">&times;</button>
+      <button onclick="show('1')">1</button>
+      <button onclick="show('2')">2</button>
+      <button onclick="show('3')">3</button>
+      <button class="symbol" onclick="show('+')">+</button>
+      <button onclick="show('00')">00</button>
+      <button onclick="show('0')">0</button>
+      <button onclick="show('.')">.</button>
+      <button class="symbol" onclick="calc()">=</button>
     </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="bottom-svg">
+      <path fill="#ffbf00" fill-opacity="1" d="M0,256L0,224L480,224L480,128L960,128L960,224L1440,224L1440,320L960,320L960,320L480,320L480,320L0,320L0,320Z"></path>
+    </svg>
   </div>
   <script src="script.js"></script>
 </body>
