@@ -1,21 +1,12 @@
 let display=document.getElementById("screen");
-function allclear()
-{
-    display.value = "";
+let allClear = () => {
+  display.value = "";
 }
 
-function clear()
-{
-  display.value = display.value.slice(0, -1);
-  console.log(display);
-}
-
-function show(n)
-{
+let show = (n) => {
     display.value += n;
 }
 
-function calc()
-{
+let calc = () => {
     display.value = eval(display.value);
 }

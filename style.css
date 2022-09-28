@@ -37,7 +37,7 @@ h1 {
   font-family: 'Sora', sans-serif;
 }
 
-.container{
+.main{
   height: 100%;
   width: 100%;
   background-color: #565151;
@@ -115,19 +115,19 @@ button:active
   height: 100%;
   background: var(--color-card);
   color: var(--color-primary);
-  display: flex;
+  /* display: flex; */
 }
 
 .sidebar .uil {
   font-size: var(--length-md3);
   cursor: pointer;
 }
-/*
+
 @media only screen and (min-width: 800px) {
   .sidebar {
     display: flex;
   }
-} */
+}
 
 
 .sidebar-top,
