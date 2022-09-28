@@ -36,6 +36,10 @@ footer {
   width: 100%;
 }
 
+header {
+  width: 100%;
+}
+
 /* .logo {
   position: absolute;
   height: 14rem;
@@ -67,6 +71,7 @@ h1 {
     align-items: center;
   }
 }
+
 
 .banner-top {
   width: 100%;
@@ -148,7 +153,7 @@ button:active
   cursor: pointer;
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 821px) {
   .sidebar {
     display: flex;
   }
@@ -159,8 +164,4 @@ button:active
   display: grid;
   place-items: center;
   height: var(--length-lg3);
-}
-
-.banner-top {
-  position: sticky;
 }
