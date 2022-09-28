@@ -26,11 +26,15 @@ body {
   position: relative;
 }
 
-.logo {
+footer {
+  width: 100%;
+}
+
+/* .logo {
   position: absolute;
   height: 14rem;
   width: auto;
-}
+} */
 
 h1 {
   color: var(--color-primary);
@@ -45,6 +49,21 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+@media only screen and (max-height: 1400px) {
+  .main {
+    /* height: 100vh; */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.banner-top {
+  width: 100%;
 }
 
 input{
@@ -129,10 +148,13 @@ button:active
   }
 }
 
-
 .sidebar-top,
 .sidebar-bottom {
   display: grid;
   place-items: center;
   height: var(--length-lg3);
+}
+
+.banner-top {
+  position: sticky;
 }
