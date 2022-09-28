@@ -21,9 +21,15 @@
   --length-xl3: 10.5rem;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   margin: 0;
-  position: relative;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
 }
 
 footer {
